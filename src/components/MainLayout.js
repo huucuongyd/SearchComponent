@@ -11,12 +11,14 @@ function MainLayout() {
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: "center",
+          backgroundPosition: "bottom",
           height:'100vh',
           overflow:'hidden'
         }}
       >
-        <Header/>
+        <div>
+          <Header/>
+        </div>
         <div style={{ height: '70vh', display:'flex', justifyContent:'center', alignItems:'center'}}>
             <SearchBar/>
         </div>

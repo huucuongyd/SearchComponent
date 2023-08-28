@@ -21,12 +21,12 @@ function Header() {
     };
     
     return (
-        <>
+        <div style={{display:'flex', width:'86%', justifyContent:'center', marginLeft:'7%',marginRight:'7%'}}>
             <div style={{
                 display: "flex",
                 alignItems:'flex-start',
                 justifyContent:'space-around',
-                width:'90%'
+                flex:1
             }}>
                 <button className='ButtonHeader'>HOME</button>
                 <button className='ButtonHeader'>PRIVACY</button>
@@ -41,7 +41,7 @@ function Header() {
                 onClick={handleClickOpen}
             />
             <MenuDialog open={open} setOpen={setOpen}/>
-        </>
+        </div>
 
     )
 }
