@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from './img/backGround.png'
+import backgroundImage from '../img/backGround.png'
 import SearchBar from './SearchBar'
 import Header from './Header';
 
@@ -7,6 +7,7 @@ function MainLayout() {
     return (
       <div
         style={{
+          backgroundColor:'#febe7c',
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',

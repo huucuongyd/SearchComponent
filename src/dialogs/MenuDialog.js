@@ -1,6 +1,6 @@
 import React from 'react';
 import { Dialog, DialogTitle, DialogContent, Slide, Typography, Box, DialogActions } from '@mui/material';
-import ClearIcon from '@mui/icons-material/Clear';
+import CloseImg from '../img/Close.png'
 import Automation from '../img/icons8-automation-50 2.png'
 
 const sizeTextContent = {
@@ -47,15 +47,14 @@ function MenuDialog(props) {
       >
         <DialogTitle id="dialog-title" style={{ display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', height:'200px', cursor:'pointer'}}>
           <DialogActions onClick={handleClose}>
-            <ClearIcon style={{
-              fontSize:'50px',
-              marginRight:'10px'
-            }}/>
+            <img src={CloseImg} alt='Close Img'></img>
             <Typography style={{
+                marginLeft:'20px',
                 fontSize:'36px',
                 fontFamily:'Quicksand, sans-serif',
-                fontWeight:'700'
-            }}>Close</Typography>
+                fontWeight:'700',
+                letterSpacing:'7px'
+            }}>CLOSE</Typography>
           </DialogActions>
         </DialogTitle>
         <DialogContent>
@@ -75,7 +74,8 @@ function MenuDialog(props) {
               marginTop:'70px',
               backgroundColor:'rgba(0, 0, 0, 0.25)',
               "&:hover": {
-                backgroundColor: '#50D24D'
+                backgroundColor: '#50D24D',
+                borderRadius:'46px'
               },
               cursor:'pointer'
             }}>
@@ -84,7 +84,9 @@ function MenuDialog(props) {
               fontFamily:'Quicksand, sans-serif',
               fontSize:'24px',
               marginLeft:'30px',
-              fontWeight:'700'
+              fontWeight:'700',
+              lineHeight:'30px',
+              letterSpacing:'4px'
             }}>CONTROL</Typography>
           </Box>
         </DialogContent>
