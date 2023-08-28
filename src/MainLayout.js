@@ -10,7 +10,9 @@ function MainLayout() {
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
+          backgroundPosition: "center",
           height:'100vh',
+          overflow:'hidden'
         }}
       >
         <Header/>

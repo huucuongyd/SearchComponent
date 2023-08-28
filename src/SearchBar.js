@@ -5,6 +5,7 @@ import searchIconImage from './img/search-image.png'
 import Shield from './img/shield.png'
 import Newspager from './img/newspaper.png'
 import VideoIcon from './img/videoicon.png'
+import SearchTopImage from './img/illstration-04 1.png'
 
 function SearchBar() {
 
@@ -25,6 +26,12 @@ function SearchBar() {
         "&:hover": {
             backgroundColor: 'transparent'
           }
+    }
+
+    const styleImageLogoSearch = {
+        position:'fixed',
+        marginBottom:'177px',
+        marginLeft:'50px'
     }
 
     const handleClick = (event) => {
@@ -76,7 +83,7 @@ function SearchBar() {
                 alignItems: 'center',
             }}
         >
-
+            <img src={SearchTopImage} alt='Logo Search' style={styleImageLogoSearch}/>
             <input
                 id='inputID'
                 style={{

@@ -25,8 +25,8 @@ function Header() {
                 <img src={Menu} alt='menu button' style={{
                     background:'none',
                     position:'fixed',
-                    top:'55px',
-                    right:'50px',
+                    top:'74px',
+                    right:'3%',
                     opacity:'0.8'
                 }}
                     onClick={handleClickOpen}
