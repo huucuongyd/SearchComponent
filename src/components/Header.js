@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Logo from '../img/logo finalllll-03 1.png'
-import Menu from '../img/icons8-menu-50 1.png'
+import Logo from '../img/LogoMain.svg'
+import Menu from '../img/MenuIcon.svg'
 import MenuDialog from '../dialogs/MenuDialog';
 
 function Header() {
@@ -9,6 +9,14 @@ function Header() {
     const handleClickOpen = () => {
       setOpen(true);
     };
+    
+    const style = {
+        display:'flex', 
+        width:'86%', 
+        justifyContent:'center', 
+        marginLeft:'7%',
+        marginRight:'7%',
+    }
   
     const imgStyle = {
       background: 'none',
@@ -19,15 +27,16 @@ function Header() {
       padding:'4px',
       borderRadius:'4px'
     };
+    const styleHeader = {
+        display: "flex",
+        alignItems:'flex-start',
+        justifyContent:'space-around',
+        flex:1
+    }
     
     return (
-        <div style={{display:'flex', width:'86%', justifyContent:'center', marginLeft:'7%',marginRight:'7%'}}>
-            <div style={{
-                display: "flex",
-                alignItems:'flex-start',
-                justifyContent:'space-around',
-                flex:1
-            }}>
+        <div style={style}>
+            <div style={styleHeader}>
                 <button className='ButtonHeader'>HOME</button>
                 <button className='ButtonHeader'>PRIVACY</button>
                 <img src={Logo} alt='Logo' style={{paddingTop:'55px'}}/>
