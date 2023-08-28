@@ -70,7 +70,13 @@ function SearchBar() {
       setCurrentIconSearch(value)
       setAnchorEl(null);
     };
-
+    const [inputValue, setInputValue] = useState("");
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            console.log('Enter key pressed, input value:', inputValue);
+            setInputValue("");
+        }
+      };     
     return (
         <div
             style={{
@@ -97,6 +103,9 @@ function SearchBar() {
                     textAlign: 'left',
                     color: 'white'
                 }}
+                value={inputValue}
+                onChange={(event) => setInputValue(event.target.value)}
+                onKeyPress={handleKeyPress}
                 placeholder='CHOSE YOUR TYPES OF SEARCH'
             />
             <Box

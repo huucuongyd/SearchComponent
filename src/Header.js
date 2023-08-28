@@ -9,6 +9,16 @@ function Header() {
     const handleClickOpen = () => {
       setOpen(true);
     };
+  
+    const imgStyle = {
+      background: 'none',
+      position: 'fixed',
+      top: '70px',
+      right: '3%',
+      cursor: 'pointer',
+      padding:'4px',
+      borderRadius:'4px'
+    };
     
     return (
         <>
@@ -22,15 +32,12 @@ function Header() {
                 <img src={Logo} alt='Logo' style={{paddingTop:'55px'}}/>
                 <button className='ButtonHeader'>ABOUT</button>
                 <button className='ButtonHeader'>FAQ</button>
-                <img src={Menu} alt='menu button' style={{
-                    background:'none',
-                    position:'fixed',
-                    top:'74px',
-                    right:'3%',
-                    opacity:'0.8'
-                }}
+                <img
+                    src={Menu}
+                    alt='menu button'
+                    style={imgStyle}
                     onClick={handleClickOpen}
-                ></img>
+                />
             </div>
             <MenuDialog open={open} setOpen={setOpen}/>
         </>

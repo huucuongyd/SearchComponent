@@ -8,7 +8,8 @@ const sizeTextContent = {
     fontFamily:'Quicksand, sans-serif',
     fontWeight:'700',
     marginLeft:'20px',
-    marginTop:'50px'
+    marginTop:'50px',
+    cursor:'pointer'
   }
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -44,7 +45,7 @@ function MenuDialog(props) {
           },
         }}
       >
-        <DialogTitle id="dialog-title" style={{ display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', height:'200px'}}>
+        <DialogTitle id="dialog-title" style={{ display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center', height:'200px', cursor:'pointer'}}>
           <DialogActions onClick={handleClose}>
             <ClearIcon style={{
               fontSize:'50px',
@@ -64,7 +65,7 @@ function MenuDialog(props) {
           <Box sx={{
               height:'70px',
               width:'260px',
-              borderRadius:'30px',
+              borderRadius:'28px',
               display:'flex',
               flexDirection:'row',
               alignItems:'center',
@@ -82,7 +83,7 @@ function MenuDialog(props) {
             <Typography style={{
               fontFamily:'Quicksand, sans-serif',
               fontSize:'24px',
-              marginLeft:'20px',
+              marginLeft:'30px',
               fontWeight:'700'
             }}>CONTROL</Typography>
           </Box>
