@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+#inputID::placeholder {
+  text-align: center;
+  color: #ffffff;
+}
+
+#inputID:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.ButtonHeader {
+  background-color: #2F496C;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-family: Quicksand, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 0.4;
+  margin-top: 55px;
+  margin-left: 35px;
+  margin-right: 35px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ButtonHeader:hover {
+  color: black;
+  background-color: #ED8C50
+}
+
+
